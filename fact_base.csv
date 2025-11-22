@@ -1,0 +1,51 @@
+id,fact,category,source,date
+1,Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) provides income support of Rs. 6000 per year to all landholding farmers,Agriculture,Ministry of Agriculture,2023-01-15
+2,The Pradhan Mantri Fasal Bima Yojana provides crop insurance coverage to farmers in case of crop failure,Agriculture,Ministry of Agriculture,2023-02-10
+3,Kisan Credit Card (KCC) provides credit facilities to farmers at concessional interest rates,Agriculture,Department of Financial Services,2023-03-20
+4,Soil Health Card Scheme provides recommendations for crop-specific nutrients to farmers,Agriculture,Ministry of Agriculture,2023-04-05
+5,The government launched PM-Kisan Vigyan Nidhi for technology adoption by farmers,Agriculture,Ministry of Agriculture,2022-12-01
+6,KUSUM scheme provides solar powered agricultural pumps to farmers for free electricity,Energy,Ministry of New and Renewable Energy,2023-01-10
+7,MNREGA guarantees 100 days of employment per year to rural households,Employment,Ministry of Rural Development,2023-02-15
+8,Ayushman Bharat provides health insurance coverage up to Rs. 5 lakhs per family per year,Healthcare,Ministry of Health,2023-03-01
+9,National Health Mission aims for universal health coverage across India,Healthcare,Ministry of Health,2023-04-10
+10,Pradhan Mantri Ujjwala Yojana provides LPG connections to Below Poverty Line households,Energy,Ministry of Petroleum,2023-01-20
+11,Swachh Bharat Mission aims for 100% open defecation free status in rural areas,Sanitation,Ministry of Jal Shakti,2023-02-28
+12,Digital India initiative focuses on digital literacy and e-governance,Digital,Ministry of Electronics and IT,2023-03-15
+13,Skill India Mission aims to train youth for employment in various sectors,Education,Ministry of Skill Development,2023-04-01
+14,Pradhan Mantri Kaushal Vikas Yojana provides free skills training to youth,Education,Ministry of Skill Development,2023-02-20
+15,Atma Nirbhar Bharat initiative focuses on self-reliant economic growth,Economy,Ministry of Commerce,2023-03-10
+16,Indian Government announced 5G spectrum auction in 2022,Telecom,Department of Telecom,2022-08-01
+17,National Monetization Pipeline was launched to unlock value from government assets,Infrastructure,Ministry of Finance,2023-01-15
+18,Gati Shakti National Master Plan aims to improve multi-modal connectivity,Infrastructure,Ministry of Commerce,2023-02-05
+19,Production Linked Incentive (PLI) scheme supports domestic manufacturing,Economy,Ministry of Commerce,2023-03-01
+20,Semiconductor Mission aims to develop domestic chip manufacturing capacity,Manufacturing,Ministry of Electronics and IT,2023-02-10
+21,National Infrastructure Pipeline focuses on infrastructure development across sectors,Infrastructure,Ministry of Finance,2023-01-20
+22,Pradhan Mantri Housing Scheme aims to provide affordable housing to all by 2024,Housing,Ministry of Housing,2023-04-15
+23,PMAY-G provides financial assistance for rural housing,Housing,Ministry of Rural Development,2023-03-20
+24,Mid Day Meal Scheme provides free meals to school children,Education,Ministry of Education,2023-02-15
+25,National Education Policy 2020 aims to reform the education system,Education,Ministry of Education,2023-01-10
+26,Startup India initiative provides support to entrepreneurship and startups,Entrepreneurship,Department for Promotion of Industry,2023-02-20
+27,Make in India campaign focuses on boosting domestic manufacturing,Manufacturing,Ministry of Commerce,2023-03-15
+28,National Mission on Biodiversity Conservation aims to protect India's wildlife,Environment,Ministry of Environment,2023-04-01
+29,Sagarmala Project focuses on port development and maritime growth,Infrastructure,Ministry of Shipping,2023-02-28
+30,Jal Jeevan Mission aims to provide safe drinking water to all households,Water,Ministry of Jal Shakti,2023-03-10
+31,Pradhan Mantri Jan Dhan Yojana provides banking services to all Indians,Finance,Ministry of Finance,2023-01-25
+32,Stand Up India provides loans up to Rs. 10 lakhs to SC/ST entrepreneurs,Entrepreneurship,Ministry of Finance,2023-02-15
+33,Mudra Yojana provides loans up to Rs. 10 lakhs to non-corporate micro-enterprises,Finance,Ministry of Finance,2023-03-20
+34,National Pension System provides retirement security with higher returns,Finance,Ministry of Finance,2023-04-05
+35,Public Provident Fund offers attractive returns and tax benefits for savings,Finance,Ministry of Finance,2023-02-10
+36,Bharatmala Project focuses on building high-quality highways across India,Infrastructure,Ministry of Road Transport,2023-01-15
+37,Solar rooftop scheme provides subsidies for rooftop solar installations,Energy,Ministry of New and Renewable Energy,2023-03-25
+38,Wind energy mission aims to increase wind power generation capacity,Energy,Ministry of New and Renewable Energy,2023-02-20
+39,National Action Plan on Climate Change focuses on climate change mitigation,Environment,Ministry of Environment,2023-04-10
+40,Pradhan Mantri Maternity Benefit Scheme provides cash assistance to pregnant women,Social Welfare,Ministry of Women and Child Development,2023-03-15
+41,Beti Bachao Beti Padhao campaign focuses on girl child protection and education,Social Welfare,Ministry of Women and Child Development,2023-02-28
+42,Pradhan Mantri Elderly Care Scheme provides support to senior citizens,Social Welfare,Ministry of Social Justice,2023-04-01
+43,National Apprenticeship Promotion Scheme provides apprenticeship training opportunities,Employment,Ministry of Skill Development,2023-02-15
+44,Prime Minister's Scholarship Scheme for Wards of Freedom Fighters provides scholarships,Education,Ministry of Defence,2023-03-10
+45,Tamil Nadu Electricity Board claims free electricity scheme is under consideration,Energy,Tamil Nadu Government,2024-01-10
+46,Government of India has not announced any free electricity scheme for all farmers in 2025,Energy,Ministry of Power,2024-06-15
+47,Electricity subsidies for agriculture vary by state and are not uniform across India,Energy,Ministry of Power,2024-05-20
+48,Maximum agricultural electricity subsidy is up to 50% in some states,Energy,Ministry of Power,2024-04-15
+49,Government is exploring renewable energy solutions for agricultural use through KUSUM,Energy,Ministry of New and Renewable Energy,2024-03-10
+50,Cost of implementing free electricity for all farmers would be approximately 2-3 lakh crores,Energy,Ministry of Finance,2024-02-20

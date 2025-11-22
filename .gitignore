@@ -1,0 +1,14 @@
+.env
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+.vscode/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.streamlit/
+chroma_db/
+*.log
+.ipynb_checkpoints/
