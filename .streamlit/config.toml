@@ -17,6 +17,3 @@ maxUploadSize = 200
 headless = true
 enableCORS = false
 enableXsrfProtection = true
-
-[client]
-toolbarMode = "minimal"
