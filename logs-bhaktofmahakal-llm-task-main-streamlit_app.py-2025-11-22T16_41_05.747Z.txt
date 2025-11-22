@@ -1,0 +1,2012 @@
+
+[     UTC     ] Logs for bhaktofmahakal-llm-task-streamlit-app-1cwrqs.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[16:25:01] 🚀 Starting up repository: 'llm-task', branch: 'main', main module: 'streamlit_app.py'
+[16:25:01] 🐙 Cloning repository...
+[16:25:02] 🐙 Cloning into '/mount/src/llm-task'...
+
+[16:25:02] 🐙 Cloned repository!
+[16:25:02] 🐙 Pulling code changes from Github...
+[16:25:02] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:
+  ╰─▶ Because only the following versions of numpy are available:
+          numpy<=1.26.0
+          numpy==1.26.1
+          numpy==1.26.2
+          numpy==1.26.3
+          numpy==1.26.4
+          numpy>2
+      and pandas==2.1.4 depends on numpy>=1.26.0,<2, we can conclude that
+      pandas==2.1.4 depends on numpy>=1.26.0,<=1.26.4.
+      And because you require pandas==2.1.4 and numpy==1.24.3, we can conclude
+      that your requirements are unsatisfiable.
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv
+Resolved 4 packages in 98ms
+Prepared 4 packages in 98ms
+Installed 4 packages in 12ms
+ +[2025-11-22 16:25:04.444970]  markdown-it-py==4.0.0
+ + mdurl==0.1.2
+ + pygments==2.19.2
+ + rich==14.2.0
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting groq==0.9.0 (from -r /mount/src/llm-task/requirements.txt (line 1))
+  Downloading groq-0.9.0-py3-none-any.whl.metadata (13 kB)
+Collecting chromadb==0.5.3 (from -r /mount/src/llm-task/requirements.txt (line 2))
+  Downloading chromadb-0.5.3-py3-none-any.whl.metadata (6.8 kB)
+Collecting sentence-transformers==2.3.1 (from -r /mount/src/llm-task/requirements.txt (line 3))
+  Downloading sentence_transformers-2.3.1-py3-none-any.whl.metadata (11 kB)
+Collecting streamlit==1.40.1 (from -r /mount/src/llm-task/requirements.txt (line 4))
+  Downloading streamlit-1.40.1-py2.py3-none-any.whl.metadata (8.5 kB)
+Collecting pandas==2.1.4 (from -r /mount/src/llm-task/requirements.txt (line 5))
+  Downloading pandas-2.1.4.tar.gz (4.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 76.0 MB/s eta 0:00:00[2025-11-22 16:25:06.418104] 
+  Installing build dependencies: started
+  Installing build dependencies: still running...
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [105 lines of output]
+      + meson setup /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/.mesonpy-nszct4l0/build -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md --vsenv --native-file=/tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/.mesonpy-nszct4l0/build/meson-python-native-file.ini
+      The Meson build system
+      Version: 1.2.1
+      Source dir: /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a
+      Build dir: /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/.mesonpy-nszct4l0/build
+      Build type: native build
+      Project name: pandas
+      Project version: 2.1.4
+      C compiler for the host machine: cc (gcc 12.2.0 "cc (Debian 12.2.0-14+deb12u1) 12.2.0")
+      C linker for the host machine: cc ld.bfd 2.40
+      C++ compiler for the host machine: c++ (gcc 12.2.0 "c++ (Debian 12.2.0-14+deb12u1) 12.2.0")
+      C++ linker for the host machine: c++ ld.bfd 2.40
+      Cython compiler for the host machine: cython (cython 0.29.37)
+      Host machine cpu family: x86_64
+      Host machine cpu: x86_64
+      Program python found: YES (/home/adminuser/venv/bin/python)
+      Did not find pkg-config by name 'pkg-config'
+      Found Pkg-config: NO
+      Run-time dependency python found: YES 3.13
+      Build targets in project: 53
+      
+      pandas 2.1.4
+      
+        User defined options
+          Native files: /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/.mesonpy-nszct4l0/build/meson-python-native-file.ini
+          buildtype   : release
+          vsenv       : True
+          b_ndebug    : if-release
+          b_vscrt     : md
+      
+      Found ninja-1.13.0.git.kitware.jobserver-pipe-1 at /tmp/pip-build-env-3n22iyyi/normal/bin/ninja
+      
+      Visual Studio environment is needed to run Ninja. It is recommended to use Meson wrapper:
+      /tmp/pip-build-env-3n22iyyi/overlay/bin/meson compile -C .
+      + /tmp/pip-build-env-3n22iyyi/normal/bin/ninja
+      [1/151] Generating pandas/_libs/index_class_helper_pxi with a custom command
+      [2/151] Generating pandas/_libs/intervaltree_helper_pxi with a custom command
+      [3/151] Generating pandas/_libs/algos_take_helper_pxi with a custom command
+      [4/151] Generating pandas/_libs/hashtable_func_helper_pxi with a custom command
+      [5/151] Generating pandas/_libs/hashtable_class_helper_pxi with a custom command
+      [6/151] Generating pandas/_libs/sparse_op_helper_pxi with a custom command
+      [7/151] Generating pandas/_libs/algos_common_helper_pxi with a custom command
+      [8/151] Generating pandas/_libs/khash_primitive_helper_pxi with a custom command
+      [9/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/base.pyx
+      [10/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/ccalendar.pyx
+      [11/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/np_datetime.pyx
+      [12/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/dtypes.pyx
+      [13/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/nattype.pyx
+      [14/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/arrays.pyx
+      [15/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/indexing.pyx
+      [16/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/timezones.pyx
+      [17/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/tzconversion.pyx
+      [18/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/timestamps.pyx
+      [19/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/strptime.pyx
+      [20/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/conversion.pyx
+      [21/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/parsing.pyx
+      [22/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/timedeltas.pyx
+      [23/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/fields.pyx
+      [24/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/vectorized.pyx
+      [25/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/hashing.pyx
+      [26/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/period.pyx
+      [27/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/ops_dispatch.pyx
+      [28/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/byteswap.pyx
+      [29/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/properties.pyx
+      [30/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslibs/offsets.pyx
+      [31/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/internals.pyx
+      [32/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/missing.pyx
+      [33/151] Compiling C object pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o
+      FAILED: [code=1] pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o
+      cc -Ipandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p -Ipandas/_libs/tslibs -I../../pandas/_libs/tslibs -I../../../../pip-build-env-3n22iyyi/overlay/lib/python3.13/site-packages/numpy/core/include -I../../pandas/_libs/include -I/usr/local/include/python3.13 -fvisibility=hidden -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -w -std=c99 -O3 -DNPY_NO_DEPRECATED_API=0 -DNPY_TARGET_VERSION=NPY_1_21_API_VERSION -fPIC -MD -MQ pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o -MF pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o.d -o pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o -c pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c
+      pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c: In function ‘__Pyx_PyInt_As_long’:
+      pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c:5397:27: error: too few arguments to function ‘_PyLong_AsByteArray’
+       5397 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      In file included from /usr/local/include/python3.13/longobject.h:107,
+                       from /usr/local/include/python3.13/Python.h:82,
+                       from pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c:6:
+      /usr/local/include/python3.13/cpython/longobject.h:111:17: note: declared here
+        111 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c: In function ‘__Pyx_PyInt_As_int’:
+      pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c:5631:27: error: too few arguments to function ‘_PyLong_AsByteArray’
+       5631 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      /usr/local/include/python3.13/cpython/longobject.h:111:17: note: declared here
+        111 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      [34/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/testing.pyx
+      [35/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/index.pyx
+      [36/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/ops.pyx
+      [37/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/sas.pyx
+      [38/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/reshape.pyx
+      [39/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/parsers.pyx
+      [40/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/tslib.pyx
+      [41/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/window/indexers.pyx
+      [42/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/lib.pyx
+      [43/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/writers.pyx
+      [44/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/window/aggregations.pyx
+      [45/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/interval.pyx
+      [46/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/hashtable.pyx
+      [47/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/sparse.pyx
+      [48/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/algos.pyx
+      [49/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/groupby.pyx
+      [50/151] Compiling Cython source /tmp/pip-install-zhqyor4p/pandas_fa4be6c11eee4e57a73249977ab38d5a/pandas/_libs/join.pyx
+      ninja: build stopped: subcommand failed.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.2.0-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.2.0-py3-none-any.whl (243 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 243.4/243.4 kB 12.7 MB/s eta 0:00:00[2025-11-22 16:27:24.537832] 
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 164.9 MB/s eta 0:00:00[2025-11-22 16:27:24.550078] 
+Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 76.6 MB/s eta 0:00:00[2025-11-22 16:27:24.577467] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.19.2
+    Uninstalling Pygments-2.19.2:
+      Successfully uninstalled Pygments-2.19.2
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 4.0.0
+    Uninstalling markdown-it-py-4.0.0:
+      Successfully uninstalled markdown-it-py-4.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.2.0
+    Uninstalling rich-14.2.0:
+      Successfully uninstalled rich-14.2.0
+Successfully installed markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.19.2 rich-14.2.0
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[16:27:26] ❗️ installer returned a non-zero exit code
+[16:27:26] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.
+[16:29:50] 🐙 Pulling code changes from Github...
+[16:29:50] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:
+  ╰─▶ Because only the following versions of numpy are available:
+          numpy<=1.26.0
+          numpy==1.26.1
+          numpy==1.26.2
+          numpy==1.26.3
+          numpy==1.26.4
+          numpy>2
+      and pandas==2.1.4 depends on numpy>=1.26.0,<2, we can conclude that
+      pandas==2.1.4 depends on numpy>=1.26.0,<=1.26.4.
+      And because you require pandas==2.1.4 and numpy==1.24.3, we can conclude
+      that your requirements are unsatisfiable.[2025-11-22 16:29:51.346569] 
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv
+Audited 1 package in 1ms
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting groq==0.9.0 (from -r /mount/src/llm-task/requirements.txt (line 1))
+  Downloading groq-0.9.0-py3-none-any.whl.metadata (13 kB)
+Collecting chromadb==0.5.3 (from -r /mount/src/llm-task/requirements.txt (line 2))
+  Downloading chromadb-0.5.3-py3-none-any.whl.metadata (6.8 kB)
+Collecting sentence-transformers==2.3.1 (from -r /mount/src/llm-task/requirements.txt (line 3))
+  Downloading sentence_transformers-2.3.1-py3-none-any.whl.metadata (11 kB)
+Collecting streamlit==1.40.1 (from -r /mount/src/llm-task/requirements.txt (line 4))
+  Downloading streamlit-1.40.1-py2.py3-none-any.whl.metadata (8.5 kB)
+Collecting pandas==2.1.4 (from -r /mount/src/llm-task/requirements.txt (line 5))
+  Downloading pandas-2.1.4.tar.gz (4.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 76.1 MB/s eta 0:00:00[2025-11-22 16:29:53.452432] 
+  Installing build dependencies: started
+  Installing build dependencies: still running...
+[16:31:40] 🖥 Provisioning machine...
+[16:31:45] 🎛 Preparing system...
+[16:31:44] 🚀 Starting up repository: 'llm-task', branch: 'main', main module: 'streamlit_app.py'
+[16:31:44] 🐙 Cloning repository...
+[16:31:44] 🐙 Cloning into '/mount/src/llm-task'...
+
+[16:31:44] 🐙 Cloned repository!
+[16:31:44] 🐙 Pulling code changes from Github...
+[16:31:45] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv
+[16:31:46] ⛓ Spinning up manager process...
+Resolved 141 packages in 2.07s
+  × Failed to download and build `pydantic-core==2.14.1`
+  ╰─▶ Build backend failed to build wheel through `build_wheel` (exit status:
+      1)
+
+      [stdout]
+      Running `maturin pep517 build-wheel -i
+      /home/adminuser/.cache/uv/builds-v0/.tmpe8uAmA/bin/python
+      --compatibility off`
+      Rust not found, installing into a temporary directory
+      cargo 1.91.1 (ea2d97820 2025-10-10)
+
+      [stderr]
+      Python reports SOABI: cpython-313-x86_64-linux-gnu
+      Computed rustc target triple: x86_64-unknown-linux-gnu
+      Installation directory: /home/adminuser/.cache/puccinialin
+      Downloading rustup-init from
+      https://static.rust-lang.org/rustup/dist/x86_64-unknown-linux-gnu/rustup-init
+      Downloading rustup-init:   0%|          | 0.00/20.9M [00:00<?,
+      ?B/s]Downloading rustup-init:  37%|███▋      | 7.72M/20.9M [00:00<00:00,
+      77.1MB/s]Downloading rustup-init: 100%|██████████| 20.9M/20.9M
+      [00:00<00:00, 121MB/s]
+      Installing rust to /home/adminuser/.cache/puccinialin/rustup
+      info: profile set to 'minimal'
+      info: default host triple is x86_64-unknown-linux-gnu
+      info: syncing channel updates for 'stable-x86_64-unknown-linux-gnu'
+      info: latest update on 2025-11-10, rust version 1.91.1 (ed61e7d7e
+      2025-11-07)
+      info: downloading component 'cargo'
+      info: downloading component 'rust-std'
+      info: downloading component 'rustc'
+      info: installing component 'cargo'
+      info: installing component 'rust-std'
+      info: installing component 'rustc'
+      info: default toolchain set to 'stable-x86_64-unknown-linux-gnu'
+      Checking if cargo is installed
+          Updating crates.io index
+       Downloading crates ...
+        Downloaded autocfg v1.1.0
+        Downloaded equivalent v1.0.1
+        Downloaded cfg-if v1.0.0
+        Downloaded enum_dispatch v0.3.12
+        Downloaded bitflags v1.3.2
+        Downloaded pyo3-macros v0.20.0
+        Downloaded unindent v0.2.3
+        Downloaded windows-targets v0.48.1
+        Downloaded tinyvec_macros v0.1.1
+      [2025-11-22 16:32:22.165799]   Downloaded scopeguard v1.1.0
+        Downloaded version_check v0.9.4
+        Downloaded wasi v0.11.0+wasi-snapshot-preview1
+        Downloaded uuid v1.5.0
+        Downloaded tinyvec v1.6.0
+        Downloaded serde v1.0.190
+        Downloaded url v2.4.1
+        Downloaded zerocopy v0.7.20
+        Downloaded hashbrown v0.14.0
+        Downloaded serde_json v1.0.108
+        Downloaded aho-corasick v1.0.2
+        Downloaded lexical-parse-float v0.8.5
+        Downloaded unicode-normalization v0.1.22
+        Downloaded num-bigint v0.4.4
+        Downloaded syn v2.0.38
+        Downloaded regex v1.10.2
+        Downloaded idna v0.4.0
+        Downloaded memchr v2.6.3
+        Downloaded lexical-write-float v0.8.5
+        Downloaded regex-syntax v0.8.2
+        Downloaded windows_aarch64_gnullvm v0.48.0
+        Downloaded jiter v0.0.4
+        Downloaded windows_x86_64_gnullvm v0.48.0
+        Downloaded python3-dll-a v0.2.9
+        Downloaded pyo3 v0.20.0
+        Downloaded pyo3-ffi v0.20.0
+        Downloaded lexical-write-integer v0.8.5
+        Downloaded lexical-util v0.8.5
+        Downloaded base64 v0.21.5
+        Downloaded serde_derive v1.0.190
+        Downloaded zerocopy-derive v0.7.20
+        Downloaded pyo3-macros-backend v0.20.0
+        Downloaded pyo3-build-config v0.20.0
+        Downloaded parking_lot v0.12.1
+        Downloaded num-traits v0.2.16
+        Downloaded windows_x86_64_gnu v0.48.0
+        Downloaded windows_aarch64_msvc v0.48.0
+        Downloaded regex-automata v0.4.3
+        Downloaded windows_x86_64_msvc v0.48.0
+        Downloaded libc v0.2.147
+        Downloaded windows_i686_msvc v0.48.0
+        Downloaded windows_i686_gnu v0.48.0
+        Downloaded indexmap v2.0.0
+        Downloaded unicode-ident v1.0.10
+        Downloaded unicode-bidi v0.3.13
+        Downloaded smallvec v1.11.1
+        Downloaded ryu v1.0.14
+        Downloaded proc-macro2 v1.0.69
+        Downloaded once_cell v1.18.0
+        Downloaded getrandom v0.2.10
+        Downloaded target-lexicon v0.12.9
+        Downloaded speedate v0.13.0
+        Downloaded lock_api v0.4.10
+      [2025-11-22 16:32:22.166030]   Downloaded lexical-parse-integer v0.8.6
+        Downloaded lexical-core v0.8.5
+        Downloaded cc v1.0.79
+        Downloaded strum_macros v0.25.3
+        Downloaded static_assertions v1.1.0
+        Downloaded rustversion v1.0.13
+        Downloaded quote v1.0.29
+        Downloaded percent-encoding v2.3.0
+        Downloaded parking_lot_core v0.9.8
+        Downloaded num-integer v0.1.45
+        Downloaded form_urlencoded v1.2.0
+        Downloaded redox_syscall v0.3.5
+        Downloaded memoffset v0.9.0
+        Downloaded itoa v1.0.8
+        Downloaded heck v0.4.1
+        Downloaded ahash v0.8.6
+        Downloaded indoc v2.0.4
+        Downloaded strum v0.25.0
+      📦 Including license file `LICENSE`
+      🍹 Building a mixed python/rust project
+      🔗 Found pyo3 bindings
+      🐍 Found CPython 3.13 at
+      /home/adminuser/.cache/uv/builds-v0/.tmpe8uAmA/bin/python
+      📡 Using build options features, bindings from pyproject.toml
+         Compiling autocfg v1.1.0
+         Compiling proc-macro2 v1.0.69
+         Compiling target-lexicon v0.12.9
+         Compiling quote v1.0.29
+         Compiling unicode-ident v1.0.10
+         Compiling python3-dll-a v0.2.9
+         Compiling once_cell v1.18.0
+         Compiling libc v0.2.147
+         Compiling heck v0.4.1
+         Compiling static_assertions v1.1.0
+         Compiling version_check v0.9.4
+         Compiling cfg-if v1.0.0
+         Compiling parking_lot_core v0.9.8
+         Compiling rustversion v1.0.13
+         Compiling tinyvec_macros v0.1.1
+         Compiling smallvec v1.11.1
+         Compiling lexical-util v0.8.5
+         Compiling scopeguard v1.1.0
+         Compiling tinyvec v1.6.0
+         Compiling serde v1.0.190
+         Compiling memchr v2.6.3
+         Compiling equivalent v1.0.1
+         Compiling indoc v2.0.4
+         Compiling unindent v0.2.3
+         Compiling regex-syntax v0.8.2
+         Compiling unicode-bidi v0.3.13
+         Compiling num-traits v0.2.16
+         Compiling num-integer v0.1.45
+         Compiling[2025-11-22 16:32:22.166234]  lock_api v0.4.10
+         Compiling memoffset v0.9.0
+         Compiling num-bigint v0.4.4
+         Compiling ahash v0.8.6
+         Compiling unicode-normalization v0.1.22
+         Compiling lexical-parse-integer v0.8.6
+         Compiling lexical-write-integer v0.8.5
+         Compiling hashbrown v0.14.0
+         Compiling lexical-parse-float v0.8.5
+         Compiling serde_json v1.0.108
+         Compiling aho-corasick v1.0.2
+         Compiling pyo3-build-config v0.20.0
+         Compiling lexical-write-float v0.8.5
+         Compiling percent-encoding v2.3.0
+         Compiling zerocopy v0.7.20
+         Compiling form_urlencoded v1.2.0
+         Compiling idna v0.4.0
+         Compiling syn v2.0.38
+         Compiling getrandom v0.2.10
+         Compiling ryu v1.0.14
+         Compiling itoa v1.0.8
+         Compiling indexmap v2.0.0
+         Compiling parking_lot v0.12.1
+         Compiling lexical-core v0.8.5
+         Compiling base64 v0.21.5
+         Compiling uuid v1.5.0
+         Compiling url v2.4.1
+         Compiling pyo3-ffi v0.20.0
+         Compiling pyo3 v0.20.0
+         Compiling pydantic-core v2.14.1
+      (/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src)
+         Compiling regex-automata v0.4.3
+      error[2025-11-22 16:32:22.166474] : failed to run custom build command for `pydantic-core v2.14.1
+      (/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src)`
+
+      Caused by:
+        process didn't exit successfully:
+      `/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/target/release/build/pydantic-core-1f0beaf398eeec66/build-script-build`
+      (exit status: 101)
+        --- stdout
+        cargo:rustc-cfg=Py_3_6
+        cargo:rustc-cfg=Py_3_7
+        cargo:rustc-cfg=Py_3_8
+        cargo:rustc-cfg=Py_3_9
+        cargo:rustc-cfg=Py_3_10
+        cargo:rustc-cfg=Py_3_11
+        cargo:rustc-cfg=Py_3_12
+        cargo:rustc-cfg=Py_3_13
+        cargo:rerun-if-changed=python/pydantic_core/core_schema.py
+        cargo:rerun-if-changed=generate_self_schema.py
+
+        --- stderr
+        Traceback (most recent call last):
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/generate_self_schema.py",
+      line 192, in eval_forward_ref
+            return type_._evaluate(core_schema.__dict__, None, set())
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        TypeError: ForwardRef._evaluate() missing 1 required keyword-only
+      argument: 'recursive_guard'
+
+        During handling of the above exception, another exception occurred:
+
+        Traceback (most recent call last):
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/generate_self_schema.py",
+      line 240, in <module>
+            main()
+            ~~~~^^
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/generate_self_schema.py",
+      line 210, in main
+            value = get_schema(s, definitions)
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/generate_self_schema.py",
+      line 54, in get_schema
+            return type_dict_schema(obj, definitions)
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/generate_self_schema.py",
+      line 152, in type_dict_schema
+            field_type = eval_forward_ref(field_type)
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/generate_self_schema.py",
+      line 195, in eval_forward_ref
+            return type_._evaluate(core_schema.__dict__, None)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        TypeError: ForwardRef._evaluate() missing 1 required keyword-only
+      argument: 'recursive_guard'
+
+        thread 'main' (1470) panicked at build.rs:29:9:
+        generate_self_schema.py failed with exit status: 1
+        note: run with `RUST_BACKTRACE=1` environment variable to display
+      a backtrace
+      warning: build failed, waiting for other jobs to finish...
+      💥 maturin failed
+        Caused by: Failed to build a native library through cargo
+        Caused by: Cargo build finished with "exit status:
+      101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1"
+      PYO3_ENVIRONMENT_SIGNATURE="cpython-3.13-64bit"
+      PYO3_PYTHON="/home/adminuser/.cache/uv/builds-v0/.tmpe8uAmA/bin/python"
+      PYTHON_SYS_EXECUTABLE="/home/adminuser/.cache/uv/builds-v0/.tmpe8uAmA/bin/python"
+      "cargo" "rustc" "--profile" "release" "--features"
+      "pyo3/extension-module" "--message-format"
+      "json-render-diagnostics" "--manifest-path"
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/Cargo.toml"
+      "--lib" "--crate-type" "cdylib"`
+      Error: command ['maturin', 'pep517', 'build-wheel', '-i',
+      '/home/adminuser/.cache/uv/builds-v0/.tmpe8uAmA/bin/python',
+      '--compatibility', 'off'] returned non-zero exit status 1
+
+  help: `pydantic-core` was included because `pydantic==2.5.0` depends on
+        `pydantic-core`
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv
+Resolved 4 packages in 50ms
+Prepared 1 package in 46ms
+Installed 4 packages in 16ms
+ + markdown-it-py==[2025-11-22 16:32:22.341402] 4.0.0
+ + mdurl==0.1.2
+ + pygments==2.19.2
+ + rich==14.2.0
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting groq==0.9.0 (from -r /mount/src/llm-task/requirements.txt (line 1))
+  Downloading groq-0.9.0-py3-none-any.whl.metadata (13 kB)
+Collecting chromadb==0.5.3 (from -r /mount/src/llm-task/requirements.txt (line 2))
+  Downloading chromadb-0.5.3-py3-none-any.whl.metadata (6.8 kB)
+Collecting sentence-transformers==2.3.1 (from -r /mount/src/llm-task/requirements.txt (line 3))
+  Downloading sentence_transformers-2.3.1-py3-none-any.whl.metadata (11 kB)
+Collecting streamlit==1.40.1 (from -r /mount/src/llm-task/requirements.txt (line 4))
+  Downloading streamlit-1.40.1-py2.py3-none-any.whl.metadata (8.5 kB)
+Collecting pandas==2.1.4 (from -r /mount/src/llm-task/requirements.txt (line 5))
+  Downloading pandas-2.1.4.tar.gz (4.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 89.0 MB/s eta 0:00:00[2025-11-22 16:32:24.892473] 
+  Installing build dependencies: started
+  Installing build dependencies: still running...
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [105 lines of output]
+      + meson setup /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553 /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/.mesonpy-szttsdvj/build -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md --vsenv --native-file=/tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/.mesonpy-szttsdvj/build/meson-python-native-file.ini
+      The Meson build system
+      Version: 1.2.1
+      Source dir: /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553
+      Build dir: /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/.mesonpy-szttsdvj/build
+      Build type: native build
+      Project name: pandas
+      Project version: 2.1.4
+      C compiler for the host machine: cc (gcc 12.2.0 "cc (Debian 12.2.0-14+deb12u1) 12.2.0")
+      C linker for the host machine: cc ld.bfd 2.40
+      C++ compiler for the host machine: c++ (gcc 12.2.0 "c++ (Debian 12.2.0-14+deb12u1) 12.2.0")
+      C++ linker for the host machine: c++ ld.bfd 2.40
+      Cython compiler for the host machine: cython (cython 0.29.37)
+      Host machine cpu family: x86_64
+      Host machine cpu: x86_64
+      Program python found: YES (/home/adminuser/venv/bin/python)
+      Did not find pkg-config by name 'pkg-config'
+      Found Pkg-config: NO
+      Run-time dependency python found: YES 3.13
+      Build targets in project: 53
+      
+      pandas 2.1.4
+      
+        User defined options
+          Native files: /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/.mesonpy-szttsdvj/build/meson-python-native-file.ini
+          buildtype   : release
+          vsenv       : True
+          b_ndebug    : if-release
+          b_vscrt     : md
+      
+      Found ninja-1.13.0.git.kitware.jobserver-pipe-1 at /tmp/pip-build-env-zykb_12u/normal/bin/ninja
+      
+      Visual Studio environment is needed to run Ninja. It is recommended to use Meson wrapper:
+      /tmp/pip-build-env-zykb_12u/overlay/bin/meson compile -C .
+      + /tmp/pip-build-env-zykb_12u/normal/bin/ninja
+      [1/151] Generating pandas/_libs/khash_primitive_helper_pxi with a custom command
+      [2/151] Generating pandas/_libs/index_class_helper_pxi with a custom command
+      [3/151] Generating pandas/_libs/algos_take_helper_pxi with a custom command
+      [4/151] Generating pandas/_libs/algos_common_helper_pxi with a custom command
+      [5/151] Generating pandas/_libs/hashtable_class_helper_pxi with a custom command
+      [6/151] Generating pandas/_libs/hashtable_func_helper_pxi with a custom command
+      [7/151] Generating pandas/_libs/intervaltree_helper_pxi with a custom command
+      [8/151] Generating pandas/_libs/sparse_op_helper_pxi with a custom command
+      [9/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/base.pyx
+      [10/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/ccalendar.pyx
+      [11/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/np_datetime.pyx
+      [12/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/dtypes.pyx
+      [13/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/nattype.pyx
+      [14/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/arrays.pyx
+      [15/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/indexing.pyx
+      [16/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/vectorized.pyx
+      [17/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/timezones.pyx
+      [18/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/parsing.pyx
+      [19/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/tzconversion.pyx
+      [20/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/fields.pyx
+      [21/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/timestamps.pyx
+      [22/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/conversion.pyx
+      [23/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/offsets.pyx
+      [24/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/strptime.pyx
+      [25/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/hashing.pyx
+      [26/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/ops_dispatch.pyx
+      [27/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/timedeltas.pyx
+      [28/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/properties.pyx
+      [29/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslibs/period.pyx
+      [30/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/missing.pyx
+      [31/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/byteswap.pyx
+      [32/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/internals.pyx
+      [33/151] Compiling C object pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o
+      FAILED: [code=1] pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o
+      cc -Ipandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p -Ipandas/_libs/tslibs -I../../pandas/_libs/tslibs -I../../../../pip-build-env-zykb_12u/overlay/lib/python3.13/site-packages/numpy/core/include -I../../pandas/_libs/include -I/usr/local/include/python3.13 -fvisibility=hidden -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -w -std=c99 -O3 -DNPY_NO_DEPRECATED_API=0 -DNPY_TARGET_VERSION=NPY_1_21_API_VERSION -fPIC -MD -MQ pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o -MF pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o.d -o pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o -c pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c
+      pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c: In function ‘__Pyx_PyInt_As_long’:
+      pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c:5397:27: error: too few arguments to function ‘_PyLong_AsByteArray’
+       5397 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      In file included from /usr/local/include/python3.13/longobject.h:107,
+                       from /usr/local/include/python3.13/Python.h:82,
+                       from pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c:6:
+      /usr/local/include/python3.13/cpython/longobject.h:111:17: note: declared here
+        111 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c: In function ‘__Pyx_PyInt_As_int’:
+      pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c:5631:27: error: too few arguments to function ‘_PyLong_AsByteArray’
+       5631 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      /usr/local/include/python3.13/cpython/longobject.h:111:17: note: declared here
+        111 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      [34/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/testing.pyx
+      [35/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/ops.pyx
+      [36/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/sas.pyx
+      [37/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/window/indexers.pyx
+      [38/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/reshape.pyx
+      [39/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/tslib.pyx
+      [40/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/lib.pyx
+      [41/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/index.pyx
+      [42/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/parsers.pyx
+      [43/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/writers.pyx
+      [44/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/window/aggregations.pyx
+      [45/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/interval.pyx
+      [46/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/sparse.pyx
+      [47/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/groupby.pyx
+      [48/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/hashtable.pyx
+      [49/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/join.pyx
+      [50/151] Compiling Cython source /tmp/pip-install-5yhejl1y/pandas_080ef837f6e74b9593922cc4de53e553/pandas/_libs/algos.pyx
+      ninja: build stopped: subcommand failed.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.2.0-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.2.0-py3-none-any.whl (243 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 243.4/243.4 kB 16.1 MB/s eta 0:00:00[2025-11-22 16:34:48.235779] 
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 184.4 MB/s eta 0:00:00[2025-11-22 16:34:48.247508] 
+Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 91.9 MB/s eta 0:00:00[2025-11-22 16:34:48.270996] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.19.2
+    Uninstalling Pygments-2.19.2:
+      Successfully uninstalled Pygments-2.19.2
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 4.0.0
+    Uninstalling markdown-it-py-4.0.0:
+      Successfully uninstalled markdown-it-py-4.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.2.0
+    Uninstalling rich-14.2.0:
+      Successfully uninstalled rich-14.2.0
+Successfully installed markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.19.2 rich-14.2.0
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[16:34:50] ❗️ installer returned a non-zero exit code
+[16:34:50] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.
+[16:34:50] 🐙 Pulling code changes from Github...
+[16:34:50] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv
+Resolved 141 packages in 358ms
+  × Failed to download and build `pydantic-core==2.14.1`
+  ╰─▶ Build backend failed to build wheel through `build_wheel` (exit status:
+      1)
+
+      [stdout]
+      Running `maturin pep517 build-wheel -i
+      /home/adminuser/.cache/uv/builds-v0/.tmpyleSgr/bin/python
+      --compatibility off`
+      cargo 1.91.1 (ea2d97820 2025-10-10)
+      Rust not found, installing into a temporary directory
+
+      [stderr]
+      Python reports SOABI: cpython-313-x86_64-linux-gnu
+      Computed rustc target triple: x86_64-unknown-linux-gnu
+      Installation directory: /home/adminuser/.cache/puccinialin
+      Rustup already downloaded
+      Installing rust to /home/adminuser/.cache/puccinialin/rustup
+      warn: It looks like you have an existing rustup settings file at:
+      warn: /home/adminuser/.rustup/settings.toml
+      warn: Rustup will install the default toolchain as specified in the
+      settings file,
+      warn: instead of the one inferred from the default host triple.
+      info: profile set to 'minimal'
+      info: default host triple is x86_64-unknown-linux-gnu
+      warn: Updating existing toolchain, profile choice will be ignored
+      info: syncing channel updates for 'stable-x86_64-unknown-linux-gnu'
+      info: default toolchain set to 'stable-x86_64-unknown-linux-gnu'
+      Checking if cargo is installed
+      📦 Including license file `LICENSE`
+      🍹 Building a mixed python/rust project
+      🔗 Found pyo3 bindings
+      🐍 Found CPython 3.13 at
+      /home/adminuser/.cache/uv/builds-v0/.tmpyleSgr/bin/python
+      📡 Using build options features, bindings from pyproject.toml
+         Compiling pyo3-build-config v0.20.0
+         Compiling pyo3-macros-backend v0.20.0
+         Compiling strum_macros v0.25.3
+         Compiling serde_derive v1.0.190
+         Compiling regex v1.10.2
+         Compiling enum_dispatch v0.3.12
+         Compiling pyo3-ffi v0.20.0
+         Compiling pyo3 v0.20.0
+         Compiling pydantic-core v2.14.1
+      (/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src)
+      error: failed to run custom build command for `pydantic-core v2.14.1
+      (/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src)`
+
+      Caused by:
+        process didn't exit successfully:
+      `/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/target/release/build/pydantic-core-1f0beaf398eeec66/build-script-build`
+      (exit status: 101)
+        --- stdout
+        cargo:rustc-cfg=Py_3_6
+        cargo:rustc-cfg=Py_3_7
+        cargo:rustc-cfg=Py_3_8
+        cargo:rustc-cfg=Py_3_9
+        cargo:rustc-cfg=Py_3_10
+        cargo:rustc-cfg=Py_3_11
+        cargo:rustc-cfg=Py_3_12
+        cargo:rustc-cfg=Py_3_13
+        cargo:rerun-if-changed=python/pydantic_core/core_schema.py
+        cargo:rerun-if-changed=generate_self_schema.py
+
+        --- stderr
+        Traceback (most recent call last):
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/generate_self_schema.py",
+      line 192, in eval_forward_ref
+            return type_._evaluate(core_schema.__dict__, None, set())
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        TypeError: ForwardRef._evaluate() missing 1 required keyword-only
+      argument: 'recursive_guard'
+
+        During handling of the above exception, another exception occurred:
+
+        Traceback (most recent call last):
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/generate_self_schema.py",
+      line 240, in <module>
+            main()
+            ~~~~^^
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/generate_self_schema.py",
+      line 210, in main
+            value = get_schema(s, definitions)
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/generate_self_schema.py",
+      line 54, in get_schema
+            return type_dict_schema(obj, definitions)
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/generate_self_schema.py",
+      line 152, in type_dict_schema
+            field_type = eval_forward_ref(field_type)
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/generate_self_schema.py",
+      line 195, in eval_forward_ref
+            return type_._evaluate(core_schema.__dict__, None)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        TypeError: ForwardRef._evaluate() missing 1 required keyword-only
+      argument: 'recursive_guard'
+
+        thread 'main' (5103) panicked at build.rs:29:9:
+        generate_self_schema.py failed with exit status: 1
+        note: run with `RUST_BACKTRACE=1` environment variable to display
+      a backtrace
+      warning: build failed, waiting for other jobs to finish...
+      💥 maturin failed
+        Caused by: Failed to build a native library through cargo
+        Caused by: Cargo build finished with "exit status:
+      101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1"
+      PYO3_ENVIRONMENT_SIGNATURE="cpython-3.13-64bit"
+      PYO3_PYTHON="/home/adminuser/.cache/uv/builds-v0/.tmpyleSgr/bin/python"
+      PYTHON_SYS_EXECUTABLE="/home/adminuser/.cache/uv/builds-v0/.tmpyleSgr/bin/python"
+      "cargo" "rustc" "--profile" "release" "--features"
+      "pyo3/extension-module" "--message-format"
+      "json-render-diagnostics" "--manifest-path"
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/4UtjV3wYSRCqUbyYKxM2E/src/Cargo.toml"
+      "--lib" "--crate-type" "cdylib"`
+      Error: command ['maturin', 'pep517', 'build-wheel', '-i',
+      '/home/adminuser/.cache/uv/builds-v0/.tmpyleSgr/bin/python',
+      '--compatibility', 'off'] returned non-zero exit status 1
+
+  help: `pydantic-core` was included because `pydantic==2.5.0` depends on
+        `pydantic-core`
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv
+Audited 1 package in 1ms
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting groq==0.9.0 (from -r /mount/src/llm-task/requirements.txt (line 1))
+  Downloading groq-0.9.0-py3-none-any.whl.metadata (13 kB)
+Collecting chromadb==0.5.3 (from -r /mount/src/llm-task/requirements.txt (line 2))
+  Downloading chromadb-0.5.3-py3-none-any.whl.metadata (6.8 kB)
+Collecting sentence-transformers==2.3.1 (from -r /mount/src/llm-task/requirements.txt (line 3))
+  Downloading sentence_transformers-2.3.1-py3-none-any.whl.metadata (11 kB)
+Collecting streamlit==1.40.1 (from -r /mount/src/llm-task/requirements.txt (line 4))
+  Downloading streamlit-1.40.1-py2.py3-none-any.whl.metadata (8.5 kB)
+Collecting pandas==2.1.4 (from -r /mount/src/llm-task/requirements.txt (line 5))
+  Downloading pandas-2.1.4.tar.gz (4.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 84.7 MB/s eta 0:00:00[2025-11-22 16:34:57.865073] 
+  Installing build dependencies: started
+[16:35:11] 🖥 Provisioning machine...
+[16:35:18] 🎛 Preparing system...
+[16:35:23] ⛓ Spinning up manager process...
+[16:35:28] 🎈 Inflating balloons...
+[16:35:14] 🚀 Starting up repository: 'llm-task', branch: 'main', main module: 'streamlit_app.py'
+[16:35:14] 🐙 Cloning repository...
+[16:35:14] 🐙 Cloning into '/mount/src/llm-task'...
+
+[16:35:14] 🐙 Cloned repository!
+[16:35:14] 🐙 Pulling code changes from Github...
+[16:35:15] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+Resolved 141 packages in 1.97s
+Prepared 141 packages in 51.50s
+Installed 141 packages in 690ms
+ + altair==5.5.0
+ + annotated-doc==0.0.4
+ + annotated-types==0.7.0
+ + anyio==4.11.0
+ + asgiref==3.11.0
+ + attrs==25.4.0
+ + backoff==2.2.1
+ + bcrypt==5.0.0
+ + blinker==1.9.0
+ + build==1.3.0
+ + cachetools==5.5.2
+ + certifi[2025-11-22 16:36:09.421950] ==2025.11.12
+ + charset-normalizer==3.4.4
+ + chroma-hnswlib==0.7.3
+ + chromadb==0.5.3
+ + click==8.3.1
+ + coloredlogs==15.0.1
+ + distro==1.9.0
+ + durationpy==0.10
+ + fastapi==0.121.3
+ + [2025-11-22 16:36:09.422218] filelock==3.20.0
+ + flatbuffers==25.9.23
+ + fsspec==2025.10.0
+ + gitdb==4.0.12
+ + gitpython==3.1.45
+ + google-auth==2.43.0
+ + googleapis-common-protos==1.72.0
+ + groq==0.9.0
+ + grpcio[2025-11-22 16:36:09.422507] ==1.76.0
+ + h11==0.16.0
+ + hf-xet==1.2.0
+ + httpcore==1.0.9
+ + httptools==0.7.1
+ + httpx==0.28.1
+ + huggingface-hub==0.36.0
+ + humanfriendly==10.0
+ [2025-11-22 16:36:09.422762] + idna==3.11
+ + importlib-metadata==8.7.0
+ + importlib-resources==6.5.2
+ + jinja2==3.1.6
+ + joblib==1.5.2
+ + jsonschema==4.25.1
+ + jsonschema-specifications==2025.9.1
+ + kubernetes==34.1.0
+ + markdown-it-py==4.0.0
+ + markupsafe==3.0.3
+ + mdurl==0.1.2
+ + mmh3==5.2.0
+ + mpmath==1.3.0
+ + narwhals==2.12.0
+ + networkx==3.5
+ + nltk==3.9.2[2025-11-22 16:36:09.423281] 
+ + numpy==1.26.4
+ + nvidia-cublas-cu12==12.8.4.1
+ + nvidia-cuda-cupti-cu12==12.8.90
+ + nvidia-cuda-nvrtc-cu12==12.8.93
+ + nvidia-cuda-runtime-cu12==12.8.90
+ + nvidia-cudnn-cu12==9.10.2.21
+ + nvidia-cufft-cu12==11.3.3.83
+ + nvidia-cufile-cu12==1.13.1.3
+ + nvidia-curand-cu12==10.3.9.90
+ + nvidia-cusolver-cu12==11.7.3.90
+ + nvidia-cusparse-cu12==12.5.8.93
+ + nvidia-cusparselt-cu12==0.7.1
+ + nvidia-nccl-cu12==2.27.5
+ + [2025-11-22 16:36:09.423712] nvidia-nvjitlink-cu12==12.8.93
+ + nvidia-nvshmem-cu12==3.3.20
+ + nvidia-nvtx-cu12==12.8.90
+ + oauthlib==3.3.1
+ + onnxruntime==1.23.2
+ + opentelemetry-api==1.38.0
+ + opentelemetry-exporter-otlp-proto-common==1.38.0
+ + opentelemetry-exporter-otlp-proto-grpc[2025-11-22 16:36:09.423916] ==1.38.0
+ + opentelemetry-instrumentation==0.59b0
+ + opentelemetry-instrumentation-asgi==0.59b0
+ + opentelemetry-instrumentation-fastapi==0.59b0
+ + opentelemetry-proto==1.38.0
+ + opentelemetry-sdk==1.38.0
+ + opentelemetry-semantic-conventions[2025-11-22 16:36:09.424185] ==0.59b0
+ + opentelemetry-util-http==0.59b0
+ + orjson==3.11.4
+ + overrides==7.7.0
+ + packaging==24.2
+ + pandas[2025-11-22 16:36:09.424402] ==2.1.4
+ + pillow==11.3.0
+ + posthog==7.0.1
+ + protobuf==5.29.5
+ + pyarrow==22.0.0
+ + pyasn1==0.6.1
+ +[2025-11-22 16:36:09.424568]  pyasn1-modules==0.4.2
+ + pydantic==2.5.0
+ + pydantic-core==2.14.1
+ + pydeck==0.9.1
+ + pygments==2.19.2
+ + pypika==0.48.9
+ + [2025-11-22 16:36:09.424722] pyproject-hooks==1.2.0
+ + python-dateutil==2.9.0.post0
+ + python-dotenv==1.0.0
+ + pytz==2025.2
+ + pyyaml==6.0.3
+ + referencing==0.37.0
+ + regex==2025.11.3
+ + requests==2.32.5
+ + requests-oauthlib==2.0.0
+ + rich==13.9.4
+ + rpds-py==0.29.0
+ + rsa[2025-11-22 16:36:09.424985] ==4.9.1
+ + safetensors==0.7.0
+ + scikit-learn==1.7.2
+ + scipy==1.16.3
+ + sentence-transformers==2.3.1
+ +[2025-11-22 16:36:09.425203]  sentencepiece==0.2.1
+ + setuptools==80.9.0
+ + shellingham==1.5.4
+ + six==1.17.0
+ + smmap==5.0.2
+ [2025-11-22 16:36:09.425333] + sniffio==1.3.1
+ + starlette==0.50.0
+ + streamlit==1.40.1
+ + sympy==1.14.0
+ + tenacity==9.1.2[2025-11-22 16:36:09.425470] 
+ + threadpoolctl==3.6.0
+ + tokenizers==0.22.1
+ + toml==0.10.2
+ + torch==2.9.1
+ + tornado[2025-11-22 16:36:09.425614] ==6.5.2
+ + tqdm==4.67.1
+ + transformers==4.57.1
+ + triton==3.5.1
+ + typer==0.20.0
+ + typing-extensions==4.15.0
+ + tzdata[2025-11-22 16:36:09.425751] ==2025.2
+ + urllib3==2.3.0
+ + uvicorn==0.38.0
+ + uvloop==0.22.1
+ + watchdog==6.0.0
+ + watchfiles==1.1.1
+ + websocket-client==1.9.0[2025-11-22 16:36:09.425880] 
+ + websockets==15.0.1
+ + wrapt==1.17.3
+ + zipp==3.23.0
+Checking if Streamlit is installed
+Found Streamlit version 1.40.1 in the environment
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+Audited 1 package in 5ms
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[16:36:11] 🐍 Python dependencies were installed from /mount/src/llm-task/requirements.txt using uv.
+Check if streamlit is installed
+Streamlit is already installed
+[16:36:12] 📦 Processed dependencies!
+Traceback (most recent call last):
+  File "/home/adminuser/venv/bin/streamlit", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/cli.py", line 210, in main_run
+    bootstrap.load_config_options(flag_options=kwargs)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/bootstrap.py", line 284, in load_config_options
+    config.get_config_options(force_reparse=True, options_from_flags=options_from_flags)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1258, in get_config_options
+    _update_config_with_toml(file_contents, filename)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1136, in _update_config_with_toml
+    parsed_config_file = toml.loads(raw_toml)
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/toml/decoder.py", line 478, in loads
+    raise TomlDecodeError("What? " + group +
+toml.decoder.TomlDecodeError: What? client already exists?{'theme': {'primaryColor': '#FF6B6B', 'backgroundColor': '#FFFFFF', 'secondaryBackgroundColor': '#F0F2F6', 'textColor': '#262730', 'font': 'sans serif'}, 'client': {'showErrorDetails': True, 'toolbarMode': 'minimal'}, 'logger': {'level': 'info'}, 'server': {'maxUploadSize': 200, 'headless': True, 'enableCORS': False, 'enableXsrfProtection': True}} (line 21 column 1 char 317)
+[16:36:13] ❗️ error restarting streamlit: exit status 7: output: streamlit: ERROR (not running)
+streamlit: ERROR (spawn error)
+
+[16:36:13] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.
+[16:36:13] 🐙 Pulling code changes from Github...
+[16:36:13] ❗️ The service has encountered an error while checking the health of the Streamlit app: Get "http://localhost:8501/healthz": dial tcp 127.0.0.1:8501: connect: connection refused
+[16:36:13] 📦 Processing dependencies...
+[16:36:13] 📦 Processed dependencies!
+[16:36:14] 🔄 Updated app!
+[16:36:14] 🐙 Pulling code changes from Github...
+[16:36:15] 📦 Processing dependencies...
+[16:36:15] 📦 Processed dependencies!
+Traceback (most recent call last):
+  File "/home/adminuser/venv/bin/streamlit", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/cli.py", line 210, in main_run
+    bootstrap.load_config_options(flag_options=kwargs)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/bootstrap.py", line 284, in load_config_options
+    config.get_config_options(force_reparse=True, options_from_flags=options_from_flags)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1258, in get_config_options
+    _update_config_with_toml(file_contents, filename)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1136, in _update_config_with_toml
+    parsed_config_file = toml.loads(raw_toml)
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/toml/decoder.py", line 478, in loads
+    raise TomlDecodeError("What? " + group +
+toml.decoder.TomlDecodeError: What? client already exists?{'theme': {'primaryColor': '#FF6B6B', 'backgroundColor': '#FFFFFF', 'secondaryBackgroundColor': '#F0F2F6', 'textColor': '#262730', 'font': 'sans serif'}, 'client': {'showErrorDetails': True, 'toolbarMode': 'minimal'}, 'logger': {'level': 'info'}, 'server': {'maxUploadSize': 200, 'headless': True, 'enableCORS': False, 'enableXsrfProtection': True}} (line 21 column 1 char 317)
+[16:36:16] 🔄 Updated app!
+Traceback (most recent call last):
+  File "/home/adminuser/venv/bin/streamlit", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/cli.py", line 210, in main_run
+    bootstrap.load_config_options(flag_options=kwargs)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/bootstrap.py", line 284, in load_config_options
+    config.get_config_options(force_reparse=True, options_from_flags=options_from_flags)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1258, in get_config_options
+    _update_config_with_toml(file_contents, filename)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1136, in _update_config_with_toml
+    parsed_config_file = toml.loads(raw_toml)
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/toml/decoder.py", line 478, in loads
+    raise TomlDecodeError("What? " + group +
+toml.decoder.TomlDecodeError: What? client already exists?{'theme': {'primaryColor': '#FF6B6B', 'backgroundColor': '#FFFFFF', 'secondaryBackgroundColor': '#F0F2F6', 'textColor': '#262730', 'font': 'sans serif'}, 'client': {'showErrorDetails': True, 'toolbarMode': 'minimal'}, 'logger': {'level': 'info'}, 'server': {'maxUploadSize': 200, 'headless': True, 'enableCORS': False, 'enableXsrfProtection': True}} (line 21 column 1 char 317)
+Traceback (most recent call last):
+  File "/home/adminuser/venv/bin/streamlit", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/cli.py", line 210, in main_run
+    bootstrap.load_config_options(flag_options=kwargs)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/bootstrap.py", line 284, in load_config_options
+    config.get_config_options(force_reparse=True, options_from_flags=options_from_flags)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1258, in get_config_options
+    _update_config_with_toml(file_contents, filename)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1136, in _update_config_with_toml
+    parsed_config_file = toml.loads(raw_toml)
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/toml/decoder.py", line 478, in loads
+    raise TomlDecodeError("What? " + group +
+toml.decoder.TomlDecodeError: What? client already exists?{'theme': {'primaryColor': '#FF6B6B', 'backgroundColor': '#FFFFFF', 'secondaryBackgroundColor': '#F0F2F6', 'textColor': '#262730', 'font': 'sans serif'}, 'client': {'showErrorDetails': True, 'toolbarMode': 'minimal'}, 'logger': {'level': 'info'}, 'server': {'maxUploadSize': 200, 'headless': True, 'enableCORS': False, 'enableXsrfProtection': True}} (line 21 column 1 char 317)
+[16:36:33] 🖥 Provisioning machine...
+[16:36:38] 🎛 Preparing system...
+[16:36:44] ⛓ Spinning up manager process...
+[16:36:49] 🎈 Inflating balloons...
+[16:36:37] 🚀 Starting up repository: 'llm-task', branch: 'main', main module: 'streamlit_app.py'
+[16:36:37] 🐙 Cloning repository...
+[16:36:38] 🐙 Cloning into '/mount/src/llm-task'...
+
+[16:36:38] 🐙 Cloned repository!
+[16:36:38] 🐙 Pulling code changes from Github...
+[16:36:38] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+Resolved 141 packages in 2.06s
+Prepared 141 packages in 50.93s
+Installed 141 packages in 581ms
+ + altair==5.5.0
+ + annotated-doc==0.0.4
+ + annotated-types==[2025-11-22 16:37:32.308210] 0.7.0
+ + anyio==4.11.0
+ + asgiref==3.11.0
+ + attrs==25.4.0
+ + backoff==2.2.1
+ + bcrypt==5.0.0
+ + blinker[2025-11-22 16:37:32.308444] ==1.9.0
+ + build==1.3.0
+ + cachetools==5.5.2
+ + certifi==2025.11.12
+ + charset-normalizer==[2025-11-22 16:37:32.308624] 3.4.4
+ + chroma-hnswlib==0.7.3
+ + chromadb==0.5.3
+ + click==8.3.1
+ + coloredlogs==15.0.1[2025-11-22 16:37:32.308817] 
+ + distro==1.9.0
+ + durationpy==0.10
+ + fastapi==0.121.3
+ + filelock==3.20.0
+ + flatbuffers==25.9.23[2025-11-22 16:37:32.309166] 
+ + fsspec==2025.10.0
+ + gitdb==4.0.12
+ + gitpython==3.1.45
+ + google-auth==2.43.0
+ [2025-11-22 16:37:32.309780] + googleapis-common-protos==1.72.0
+ + groq==0.9.0
+ + grpcio==1.76.0
+ + h11==0.16.0
+ +[2025-11-22 16:37:32.310016]  hf-xet==1.2.0
+ + httpcore==1.0.9
+ + httptools==0.7.1
+ + httpx==0.28.1
+ + huggingface-hub==0.36.0
+ + humanfriendly==10.0
+ + idna==3.11
+ + importlib-metadata==8.7.0[2025-11-22 16:37:32.310412] 
+ + importlib-resources==6.5.2
+ + jinja2==3.1.6
+ + joblib==1.5.2
+ + jsonschema==4.25.1[2025-11-22 16:37:32.310581] 
+ + jsonschema-specifications==2025.9.1
+ + kubernetes==34.1.0
+ + markdown-it-py==4.0.0
+ + markupsafe==[2025-11-22 16:37:32.310787] 3.0.3
+ + mdurl==0.1.2
+ + mmh3==5.2.0
+ + mpmath==1.3.0
+ + narwhals==[2025-11-22 16:37:32.310979] 2.12.0
+ + networkx==3.5
+ + nltk==3.9.2
+ + numpy==1.26.4
+ + nvidia-cublas-cu12==12.8.4.1
+ + nvidia-cuda-cupti-cu12==12.8.90
+ + nvidia-cuda-nvrtc-cu12==12.8.93
+ + nvidia-cuda-runtime-cu12==12.8.90[2025-11-22 16:37:32.311405] 
+ + nvidia-cudnn-cu12==9.10.2.21
+ + nvidia-cufft-cu12==11.3.3.83
+ + nvidia-cufile-cu12==1.13.1.3
+ + nvidia-curand-cu12==10.3.9.90
+ + nvidia-cusolver-cu12==11.7.3.90
+ + nvidia-cusparse-cu12==12.5.8.93
+ + nvidia-cusparselt-cu12==0.7.1
+ + nvidia-nccl-cu12==2.27.5
+ + nvidia-nvjitlink-cu12==12.8.93
+ + nvidia-nvshmem-cu12==3.3.20
+ + nvidia-nvtx-cu12==12.8.90
+ + oauthlib==3.3.1
+ + onnxruntime[2025-11-22 16:37:32.311563] ==1.23.2
+ + opentelemetry-api==1.38.0
+ + opentelemetry-exporter-otlp-proto-common==1.38.0
+ + opentelemetry-exporter-otlp-proto-grpc==1.38.0
+ + opentelemetry-instrumentation==0.59b0
+ + opentelemetry-instrumentation-asgi==0.59b0[2025-11-22 16:37:32.311697] 
+ + opentelemetry-instrumentation-fastapi==0.59b0
+ + opentelemetry-proto==1.38.0
+ + opentelemetry-sdk==1.38.0
+ + opentelemetry-semantic-conventions==0.59b0
+ + opentelemetry-util-http==0.59b0
+ + orjson==3.11.4[2025-11-22 16:37:32.311850] 
+ + overrides==7.7.0
+ + packaging==24.2
+ + pandas==2.1.4
+ + pillow==11.3.0
+ [2025-11-22 16:37:32.312012] + posthog==7.0.1
+ + protobuf==5.29.5
+ + pyarrow==22.0.0
+ + [2025-11-22 16:37:32.312136] pyasn1==0.6.1
+ + pyasn1-modules==0.4.2
+ + pydantic==2.5.0
+ + pydantic-core==2.14.1
+ + [2025-11-22 16:37:32.312262] pydeck==0.9.1
+ + pygments==2.19.2
+ + pypika==0.48.9
+ + pyproject-hooks==1.2.0
+ [2025-11-22 16:37:32.312379] + python-dateutil==2.9.0.post0
+ + python-dotenv==1.0.0
+ + pytz==2025.2
+ + pyyaml==6.0.3
+ + [2025-11-22 16:37:32.312491] referencing==0.37.0
+ + regex==2025.11.3
+ + requests==2.32.5
+ + requests-oauthlib==2.0.0
+ +[2025-11-22 16:37:32.312598]  rich==13.9.4
+ + rpds-py==0.29.0
+ + rsa==4.9.1
+ + safetensors==0.7.0[2025-11-22 16:37:32.312707] 
+ + scikit-learn==1.7.2
+ + scipy==1.16.3
+ + sentence-transformers==2.3.1
+ + sentencepiece==0.2.1[2025-11-22 16:37:32.312818] 
+ + setuptools==80.9.0
+ + shellingham==1.5.4
+ + six==1.17.0
+ + smmap==[2025-11-22 16:37:32.312986] 5.0.2
+ + sniffio==1.3.1
+ + starlette==0.50.0
+ + streamlit==1.40.1
+ + sympy[2025-11-22 16:37:32.313106] ==1.14.0
+ + tenacity==9.1.2
+ + threadpoolctl==3.6.0
+ + tokenizers==0.22.1
+ +[2025-11-22 16:37:32.313210]  toml==0.10.2
+ + torch==2.9.1
+ + tornado==6.5.2
+ + tqdm[2025-11-22 16:37:32.313334] ==4.67.1
+ + transformers==4.57.1
+ + triton==3.5.1
+ + typer==0.20.0
+ + typing-extensions==4.15.0[2025-11-22 16:37:32.313467] 
+ + tzdata==2025.2
+ + urllib3==2.3.0
+ + uvicorn==0.38.0
+ + uvloop==0.22.1[2025-11-22 16:37:32.313597] 
+ + watchdog==6.0.0
+ + watchfiles==1.1.1
+ + websocket-client==1.9.0
+ + websockets==15.0.1
+ +[2025-11-22 16:37:32.313712]  wrapt==1.17.3
+ + zipp==3.23.0
+Checking if Streamlit is installed
+Found Streamlit version 1.40.1 in the environment
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+Audited 1 package in 6ms
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[16:37:34] 🐍 Python dependencies were installed from /mount/src/llm-task/requirements.txt using uv.
+Check if streamlit is installed
+Streamlit is already installed
+[16:37:36] 📦 Processed dependencies!
+Traceback (most recent call last):
+  File "/home/adminuser/venv/bin/streamlit", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/cli.py", line 210, in main_run
+    bootstrap.load_config_options(flag_options=kwargs)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/bootstrap.py", line 284, in load_config_options
+    config.get_config_options(force_reparse=True, options_from_flags=options_from_flags)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1258, in get_config_options
+    _update_config_with_toml(file_contents, filename)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1136, in _update_config_with_toml
+    parsed_config_file = toml.loads(raw_toml)
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/toml/decoder.py", line 478, in loads
+    raise TomlDecodeError("What? " + group +
+toml.decoder.TomlDecodeError: What? client already exists?{'theme': {'primaryColor': '#FF6B6B', 'backgroundColor': '#FFFFFF', 'secondaryBackgroundColor': '#F0F2F6', 'textColor': '#262730', 'font': 'sans serif'}, 'client': {'showErrorDetails': True, 'toolbarMode': 'minimal'}, 'logger': {'level': 'info'}, 'server': {'maxUploadSize': 200, 'headless': True, 'enableCORS': False, 'enableXsrfProtection': True}} (line 21 column 1 char 317)
+[16:37:36] ❗️ error restarting streamlit: exit status 7: output: streamlit: ERROR (not running)
+streamlit: ERROR (spawn error)
+
+[16:37:36] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.
+Traceback (most recent call last):
+  File "/home/adminuser/venv/bin/streamlit", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/cli.py", line 210, in main_run
+    bootstrap.load_config_options(flag_options=kwargs)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/bootstrap.py", line 284, in load_config_options
+    config.get_config_options(force_reparse=True, options_from_flags=options_from_flags)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1258, in get_config_options
+    _update_config_with_toml(file_contents, filename)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1136, in _update_config_with_toml
+    parsed_config_file = toml.loads(raw_toml)
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/toml/decoder.py", line 478, in loads
+    raise TomlDecodeError("What? " + group +
+toml.decoder.TomlDecodeError: What? client already exists?{'theme': {'primaryColor': '#FF6B6B', 'backgroundColor': '#FFFFFF', 'secondaryBackgroundColor': '#F0F2F6', 'textColor': '#262730', 'font': 'sans serif'}, 'client': {'showErrorDetails': True, 'toolbarMode': 'minimal'}, 'logger': {'level': 'info'}, 'server': {'maxUploadSize': 200, 'headless': True, 'enableCORS': False, 'enableXsrfProtection': True}} (line 21 column 1 char 317)
+Traceback (most recent call last):
+  File "/home/adminuser/venv/bin/streamlit", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/cli.py", line 210, in main_run
+    bootstrap.load_config_options(flag_options=kwargs)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/bootstrap.py", line 284, in load_config_options
+    config.get_config_options(force_reparse=True, options_from_flags=options_from_flags)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1258, in get_config_options
+    _update_config_with_toml(file_contents, filename)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1136, in _update_config_with_toml
+    parsed_config_file = toml.loads(raw_toml)
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/toml/decoder.py", line 478, in loads
+    raise TomlDecodeError("What? " + group +
+toml.decoder.TomlDecodeError: What? client already exists?{'theme': {'primaryColor': '#FF6B6B', 'backgroundColor': '#FFFFFF', 'secondaryBackgroundColor': '#F0F2F6', 'textColor': '#262730', 'font': 'sans serif'}, 'client': {'showErrorDetails': True, 'toolbarMode': 'minimal'}, 'logger': {'level': 'info'}, 'server': {'maxUploadSize': 200, 'headless': True, 'enableCORS': False, 'enableXsrfProtection': True}} (line 21 column 1 char 317)
+Traceback (most recent call last):
+  File "/home/adminuser/venv/bin/streamlit", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/cli.py", line 210, in main_run
+    bootstrap.load_config_options(flag_options=kwargs)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/web/bootstrap.py", line 284, in load_config_options
+    config.get_config_options(force_reparse=True, options_from_flags=options_from_flags)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1258, in get_config_options
+    _update_config_with_toml(file_contents, filename)
+  File "/home/adminuser/venv/lib/python3.12/site-packages/streamlit/config.py", line 1136, in _update_config_with_toml
+    parsed_config_file = toml.loads(raw_toml)
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.12/site-packages/toml/decoder.py", line 478, in loads
+    raise TomlDecodeError("What? " + group +
+toml.decoder.TomlDecodeError: What? client already exists?{'theme': {'primaryColor': '#FF6B6B', 'backgroundColor': '#FFFFFF', 'secondaryBackgroundColor': '#F0F2F6', 'textColor': '#262730', 'font': 'sans serif'}, 'client': {'showErrorDetails': True, 'toolbarMode': 'minimal'}, 'logger': {'level': 'info'}, 'server': {'maxUploadSize': 200, 'headless': True, 'enableCORS': False, 'enableXsrfProtection': True}} (line 21 column 1 char 317)
+[16:37:46] 🖥 Provisioning machine...
+[16:37:52] 🎛 Preparing system...
+[16:37:57] ⛓ Spinning up manager process...
+[16:38:02] 🎈 Inflating balloons...
+[16:37:50] 🚀 Starting up repository: 'llm-task', branch: 'main', main module: 'streamlit_app.py'
+[16:37:50] 🐙 Cloning repository...
+[16:37:50] 🐙 Cloning into '/mount/src/llm-task'...
+
+[16:37:50] 🐙 Cloned repository!
+[16:37:50] 🐙 Pulling code changes from Github...
+[16:37:50] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv
+Resolved 141 packages in 2.05s
+  × Failed to download and build `pydantic-core==2.14.1`
+  ╰─▶ Build backend failed to build wheel through `build_wheel` (exit status:
+      1)
+
+      [stdout]
+      Running `maturin pep517 build-wheel -i
+      /home/adminuser/.cache/uv/builds-v0/.tmpYkNMeZ/bin/python
+      --compatibility off`
+      Rust not found, installing into a temporary directory
+      cargo 1.91.1 (ea2d97820 2025-10-10)
+
+      [stderr]
+      Python reports SOABI: cpython-313-x86_64-linux-gnu
+      Computed rustc target triple: x86_64-unknown-linux-gnu
+      Installation directory: /home/adminuser/.cache/puccinialin
+      Downloading rustup-init from
+      https://static.rust-lang.org/rustup/dist/x86_64-unknown-linux-gnu/rustup-init
+      Downloading rustup-init:   0%|          | 0.00/20.9M [00:00<?,
+      ?B/s]Downloading rustup-init:  44%|████▍     | 9.23M/20.9M [00:00<00:00,
+      92.3MB/s]Downloading rustup-init: 100%|██████████| 20.9M/20.9M
+      [00:00<00:00, 121MB/s]
+      Installing rust to /home/adminuser/.cache/puccinialin/rustup
+      info: profile set to 'minimal'
+      info: default host triple is x86_64-unknown-linux-gnu
+      info: syncing channel updates for 'stable-x86_64-unknown-linux-gnu'
+      info: latest update on 2025-11-10, rust version 1.91.1 (ed61e7d7e
+      2025-11-07)
+      info: downloading component 'cargo'
+      info: downloading component 'rust-std'
+      info: downloading component 'rustc'
+      info: installing component 'cargo'
+      info: installing component 'rust-std'
+      info: installing component 'rustc'
+      info: default toolchain set to 'stable-x86_64-unknown-linux-gnu'
+      Checking if cargo is installed
+          Updating crates.io index
+       Downloading crates ...
+        Downloaded equivalent v1.0.1
+        Downloaded enum_dispatch v0.3.12
+        Downloaded cfg-if v1.0.0
+      [2025-11-22 16:38:30.061858]   Downloaded bitflags v1.3.2
+        Downloaded pyo3-ffi v0.20.0
+        Downloaded strum v0.25.0
+        Downloaded pyo3-macros v0.20.0
+        Downloaded percent-encoding v2.3.0
+        Downloaded wasi v0.11.0+wasi-snapshot-preview1
+        Downloaded ryu v1.0.14
+        Downloaded windows-targets v0.48.1
+        Downloaded tinyvec_macros v0.1.1
+        Downloaded unicode-bidi v0.3.13
+        Downloaded pyo3-macros-backend v0.20.0
+        Downloaded serde v1.0.190
+        Downloaded unicode-normalization v0.1.22
+        Downloaded num-bigint v0.4.4
+        Downloaded url v2.4.1
+        Downloaded libc v0.2.147
+        Downloaded zerocopy v0.7.20
+        Downloaded hashbrown v0.14.0
+        Downloaded memchr v2.6.3
+        Downloaded lexical-write-float v0.8.5
+        Downloaded lexical-util v0.8.5
+        Downloaded jiter v0.0.4
+        Downloaded regex-syntax v0.8.2
+        Downloaded python3-dll-a v0.2.9
+        Downloaded syn v2.0.38
+        Downloaded idna v0.4.0
+        Downloaded regex v1.10.2
+        Downloaded pyo3 v0.20.0
+        Downloaded parking_lot v0.12.1
+        Downloaded tinyvec v1.6.0
+        Downloaded target-lexicon v0.12.9
+        Downloaded windows_x86_64_gnullvm v0.48.0
+        Downloaded windows_aarch64_gnullvm v0.48.0
+        Downloaded strum_macros v0.25.3
+        Downloaded proc-macro2 v1.0.69
+        Downloaded once_cell v1.18.0
+        Downloaded zerocopy-derive v0.7.20
+        Downloaded lexical-write-integer v0.8.5
+        Downloaded lexical-parse-float v0.8.5
+        Downloaded getrandom v0.2.10
+        Downloaded static_assertions v1.1.0
+        Downloaded speedate v0.13.0
+        Downloaded rustversion v1.0.13
+        Downloaded regex-automata v0.4.3
+        Downloaded windows_i686_msvc v0.48.0
+        Downloaded pyo3-build-config v0.20.0
+        Downloaded windows_x86_64_msvc v0.48.0
+        Downloaded windows_x86_64_gnu v0.48.0
+        Downloaded windows_aarch64_msvc v0.48.0
+        Downloaded memoffset v0.9.0
+        Downloaded windows_i686_gnu v0.48.0
+        Downloaded form_urlencoded v1.2.0
+        Downloaded uuid v1.5.0
+        Downloaded unindent v0.2.3
+        Downloaded unicode-ident v1.0.10
+        Downloaded serde_json v1.0.108
+        Downloaded lexical-parse-integer v0.8.6
+        Downloaded num-traits v0.2.16
+        Downloaded lexical-core v0.8.5
+        Downloaded indoc v2.0.4
+        Downloaded version_check v0.9.4
+        Downloaded smallvec v1.11.1
+        Downloaded serde_derive v1.0.190
+        Downloaded redox_syscall v0.3.5
+        Downloaded parking_lot_core v0.9.8
+        Downloaded lock_api v0.4.10
+        Downloaded itoa v1.0.8
+        Downloaded indexmap v2.0.0
+        Downloaded heck v0.4.1
+        Downloaded scopeguard v1.1.0
+        Downloaded quote v1.0.29
+        Downloaded base64 v0.21.5
+        Downloaded aho-corasick v1.0.2
+        Downloaded num-integer v0.1.45
+        Downloaded cc v1.0.79
+        Downloaded autocfg v1.1.0
+        Downloaded[2025-11-22 16:38:30.062149]  ahash v0.8.6
+      📦 Including license file `LICENSE`
+      🍹 Building a mixed python/rust project
+      🔗 Found pyo3 bindings
+      🐍 Found CPython 3.13 at
+      /home/adminuser/.cache/uv/builds-v0/.tmpYkNMeZ/bin/python
+      📡 Using build options features, bindings from pyproject.toml
+         Compiling autocfg v1.1.0
+         Compiling proc-macro2 v1.0.69
+         Compiling quote v1.0.29
+         Compiling target-lexicon v0.12.9
+         Compiling unicode-ident v1.0.10
+         Compiling python3-dll-a v0.2.9
+         Compiling once_cell v1.18.0
+         Compiling libc v0.2.147
+         Compiling static_assertions v1.1.0
+         Compiling heck v0.4.1
+         Compiling cfg-if v1.0.0
+         Compiling version_check v0.9.4
+         Compiling rustversion v1.0.13
+         Compiling parking_lot_core v0.9.8
+         Compiling tinyvec_macros v0.1.1
+         Compiling scopeguard v1.1.0
+         Compiling lexical-util v0.8.5
+         Compiling smallvec v1.11.1
+         Compiling tinyvec v1.6.0
+         Compiling memchr v2.6.3
+         Compiling serde v1.0.190
+         Compiling regex-syntax v0.8.2
+         Compiling unindent v0.2.3
+         Compiling indoc v2.0.4
+         Compiling zerocopy v0.7.20
+         Compiling ahash v0.8.6
+         Compiling num-traits v0.2.16
+         Compiling num-integer v0.1.45
+         Compiling lock_api v0.4.10
+         Compiling num-bigint v0.4.4
+         Compiling memoffset v0.9.0
+         Compiling serde_json v1.0.108
+         Compiling equivalent v1.0.1
+         Compiling percent-encoding v2.3.0
+         Compiling hashbrown v0.14.0
+         Compiling aho-corasick v1.0.2
+         Compiling unicode-normalization v0.1.22
+         Compiling unicode-bidi v0.3.13
+         Compiling form_urlencoded v1.2.0
+         Compiling pyo3-build-config v0.20.0
+         Compiling lexical-write-integer v0.8.5
+         Compiling lexical-parse-integer v0.8.6
+         Compiling itoa v1.0.8
+         Compiling ryu v1.0.14
+         Compiling base64 v0.21.5
+         Compiling lexical-parse-float v0.8.5
+         Compiling lexical-write-float v0.8.5
+         Compiling uuid v1.5.0
+         Compiling getrandom v0.2.10
+         Compiling idna v0.4.0
+         Compiling indexmap v2.0.0
+         Compiling syn v2.0.38
+         Compiling parking_lot v0.12.1
+         Compiling url v2.4.1
+         Compiling lexical-core v0.8.5
+         Compiling regex-automata v0.4.3
+         Compiling[2025-11-22 16:38:30.062464]  pyo3-ffi v0.20.0
+         Compiling pyo3 v0.20.0
+         Compiling pydantic-core v2.14.1
+      (/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/ZS6n9ZNNuNM9Z9smc_SOX/src)
+      error: failed to run custom build command for `pydantic-core v2.14.1
+      (/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/ZS6n9ZNNuNM9Z9smc_SOX/src)`
+
+      Caused by:
+        process didn't exit successfully:
+      `/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/ZS6n9ZNNuNM9Z9smc_SOX/src/target/release/build/pydantic-core-1f0beaf398eeec66/build-script-build`
+      (exit status: 101)
+        --- stdout
+        cargo:rustc-cfg=Py_3_6
+        cargo:rustc-cfg=Py_3_7
+        cargo:rustc-cfg=Py_3_8
+        cargo:rustc-cfg=Py_3_9
+        cargo:rustc-cfg=Py_3_10
+        cargo:rustc-cfg=Py_3_11
+        cargo:rustc-cfg=Py_3_12
+        cargo:rustc-cfg=Py_3_13
+        cargo:rerun-if-changed=python/pydantic_core/core_schema.py
+        cargo:rerun-if-changed=generate_self_schema.py
+
+        --- stderr
+        Traceback (most recent call last):
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/ZS6n9ZNNuNM9Z9smc_SOX/src/generate_self_schema.py",
+      line 192, in eval_forward_ref
+            return type_._evaluate(core_schema.__dict__, None, set())
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        TypeError: ForwardRef._evaluate() missing 1 required keyword-only
+      argument: 'recursive_guard'
+
+        During handling of the above exception, another exception occurred:
+
+        Traceback (most recent call last):
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/ZS6n9ZNNuNM9Z9smc_SOX/src/generate_self_schema.py",
+      line 240, in <module>
+            main()
+            ~~~~^^
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/ZS6n9ZNNuNM9Z9smc_SOX/src/generate_self_schema.py",
+      line 210, in main
+            value = get_schema(s, definitions)
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/ZS6n9ZNNuNM9Z9smc_SOX/src/generate_self_schema.py",
+      line 54, in get_schema
+            return type_dict_schema(obj, definitions)
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/ZS6n9ZNNuNM9Z9smc_SOX/src/generate_self_schema.py",
+      line 152, in type_dict_schema
+            field_type = eval_forward_ref(field_type)
+          File
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/ZS6n9ZNNuNM9Z9smc_SOX/src/generate_self_schema.py",
+      line 195, in eval_forward_ref
+            return type_._evaluate(core_schema.__dict__, None)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        TypeError: ForwardRef._evaluate() missing 1 required keyword-only
+      argument: 'recursive_guard'
+
+        thread 'main' (1655) panicked at build.rs:29:9:
+        generate_self_schema.py failed with exit status: 1
+        note: run with `RUST_BACKTRACE=1` environment variable to display
+      a backtrace
+      warning: build failed, waiting for other jobs to finish...
+      💥 maturin failed
+        Caused by: Failed to build a native library through cargo
+        Caused by: Cargo build finished with "exit status:
+      101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1"
+      PYO3_ENVIRONMENT_SIGNATURE="cpython-3.13-64bit"
+      PYO3_PYTHON="/home/adminuser/.cache/uv/builds-v0/.tmpYkNMeZ/bin/python"
+      PYTHON_SYS_EXECUTABLE="/home/adminuser/.cache/uv/builds-v0/.tmpYkNMeZ/bin/python"
+      "cargo" "rustc" "--profile" "release" "--features"
+      "pyo3/extension-module" "--message-format"
+      "json-render-diagnostics" "--manifest-path"
+      "/home/adminuser/.cache/uv/sdists-v6/pypi/pydantic-core/2.14.1/ZS6n9ZNNuNM9Z9smc_SOX/src/Cargo.toml"
+      "--lib" "--crate-type" "cdylib"`
+      Error: command ['maturin', 'pep517', 'build-wheel', '-i',
+      '/home/adminuser/.cache/uv/builds-v0/.tmpYkNMeZ/bin/python',
+      '--compatibility', 'off'] returned non-zero exit status 1
+
+  help: `pydantic-core` was included because `pydantic==2.5.0` depends on
+        `pydantic-core`
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv[2025-11-22 16:38:30.122020] 
+Resolved 4 packages in 44ms
+Prepared 1 package in 43ms
+Installed 4 packages in 17ms
+ + markdown-it-py==4.0.0[2025-11-22 16:38:30.236929] 
+ + mdurl==0.1.2
+ + pygments==2.19.2
+ + rich==14.2.0
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting groq==0.9.0 (from -r /mount/src/llm-task/requirements.txt (line 1))
+  Downloading groq-0.9.0-py3-none-any.whl.metadata (13 kB)
+Collecting chromadb==0.5.3 (from -r /mount/src/llm-task/requirements.txt (line 2))
+  Downloading chromadb-0.5.3-py3-none-any.whl.metadata (6.8 kB)
+Collecting sentence-transformers==2.3.1 (from -r /mount/src/llm-task/requirements.txt (line 3))
+  Downloading sentence_transformers-2.3.1-py3-none-any.whl.metadata (11 kB)
+Collecting streamlit==1.40.1 (from -r /mount/src/llm-task/requirements.txt (line 4))
+  Downloading streamlit-1.40.1-py2.py3-none-any.whl.metadata (8.5 kB)
+Collecting pandas==2.1.4 (from -r /mount/src/llm-task/requirements.txt (line 5))
+  Downloading pandas-2.1.4.tar.gz (4.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 82.5 MB/s eta 0:00:00[2025-11-22 16:38:32.557998] 
+  Installing build dependencies: started
+  Installing build dependencies: still running...
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [105 lines of output]
+      + meson setup /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/.mesonpy-_9f6j6ec/build -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md --vsenv --native-file=/tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/.mesonpy-_9f6j6ec/build/meson-python-native-file.ini
+      The Meson build system
+      Version: 1.2.1
+      Source dir: /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f
+      Build dir: /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/.mesonpy-_9f6j6ec/build
+      Build type: native build
+      Project name: pandas
+      Project version: 2.1.4
+      C compiler for the host machine: cc (gcc 12.2.0 "cc (Debian 12.2.0-14+deb12u1) 12.2.0")
+      C linker for the host machine: cc ld.bfd 2.40
+      C++ compiler for the host machine: c++ (gcc 12.2.0 "c++ (Debian 12.2.0-14+deb12u1) 12.2.0")
+      C++ linker for the host machine: c++ ld.bfd 2.40
+      Cython compiler for the host machine: cython (cython 0.29.37)
+      Host machine cpu family: x86_64
+      Host machine cpu: x86_64
+      Program python found: YES (/home/adminuser/venv/bin/python)
+      Did not find pkg-config by name 'pkg-config'
+      Found Pkg-config: NO
+      Run-time dependency python found: YES 3.13
+      Build targets in project: 53
+      
+      pandas 2.1.4
+      
+        User defined options
+          Native files: /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/.mesonpy-_9f6j6ec/build/meson-python-native-file.ini
+          buildtype   : release
+          vsenv       : True
+          b_ndebug    : if-release
+          b_vscrt     : md
+      
+      Found ninja-1.13.0.git.kitware.jobserver-pipe-1 at /tmp/pip-build-env-hkqiq1ti/normal/bin/ninja
+      
+      Visual Studio environment is needed to run Ninja. It is recommended to use Meson wrapper:
+      /tmp/pip-build-env-hkqiq1ti/overlay/bin/meson compile -C .
+      + /tmp/pip-build-env-hkqiq1ti/normal/bin/ninja
+      [1/151] Generating pandas/_libs/algos_common_helper_pxi with a custom command
+      [2/151] Generating pandas/_libs/khash_primitive_helper_pxi with a custom command
+      [3/151] Generating pandas/_libs/algos_take_helper_pxi with a custom command
+      [4/151] Generating pandas/_libs/intervaltree_helper_pxi with a custom command
+      [5/151] Generating pandas/_libs/hashtable_func_helper_pxi with a custom command
+      [6/151] Generating pandas/_libs/index_class_helper_pxi with a custom command
+      [7/151] Generating pandas/_libs/sparse_op_helper_pxi with a custom command
+      [8/151] Generating pandas/_libs/hashtable_class_helper_pxi with a custom command
+      [9/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/base.pyx
+      [10/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/ccalendar.pyx
+      [11/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/np_datetime.pyx
+      [12/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/dtypes.pyx
+      [13/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/nattype.pyx
+      [14/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/arrays.pyx
+      [15/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/indexing.pyx
+      [16/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/timezones.pyx
+      [17/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/tzconversion.pyx
+      [18/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/fields.pyx
+      [19/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/conversion.pyx
+      [20/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/vectorized.pyx
+      [21/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/parsing.pyx
+      [22/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/timestamps.pyx
+      [23/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/offsets.pyx
+      [24/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/period.pyx
+      [25/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/strptime.pyx
+      [26/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslibs/timedeltas.pyx
+      [27/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/ops_dispatch.pyx
+      [28/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/hashing.pyx
+      [29/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/missing.pyx
+      [30/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/properties.pyx
+      [31/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/byteswap.pyx
+      [32/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/internals.pyx
+      [33/151] Compiling C object pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o
+      FAILED: [code=1] pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o
+      cc -Ipandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p -Ipandas/_libs/tslibs -I../../pandas/_libs/tslibs -I../../../../pip-build-env-hkqiq1ti/overlay/lib/python3.13/site-packages/numpy/core/include -I../../pandas/_libs/include -I/usr/local/include/python3.13 -fvisibility=hidden -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -w -std=c99 -O3 -DNPY_NO_DEPRECATED_API=0 -DNPY_TARGET_VERSION=NPY_1_21_API_VERSION -fPIC -MD -MQ pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o -MF pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o.d -o pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/meson-generated_pandas__libs_tslibs_base.pyx.c.o -c pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c
+      pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c: In function ‘__Pyx_PyInt_As_long’:
+      pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c:5397:27: error: too few arguments to function ‘_PyLong_AsByteArray’
+       5397 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      In file included from /usr/local/include/python3.13/longobject.h:107,
+                       from /usr/local/include/python3.13/Python.h:82,
+                       from pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c:6:
+      /usr/local/include/python3.13/cpython/longobject.h:111:17: note: declared here
+        111 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c: In function ‘__Pyx_PyInt_As_int’:
+      pandas/_libs/tslibs/base.cpython-313-x86_64-linux-gnu.so.p/pandas/_libs/tslibs/base.pyx.c:5631:27: error: too few arguments to function ‘_PyLong_AsByteArray’
+       5631 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+            |                           ^~~~~~~~~~~~~~~~~~~
+      /usr/local/include/python3.13/cpython/longobject.h:111:17: note: declared here
+        111 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+            |                 ^~~~~~~~~~~~~~~~~~~
+      [34/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/testing.pyx
+      [35/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/reshape.pyx
+      [36/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/index.pyx
+      [37/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/sas.pyx
+      [38/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/ops.pyx
+      [39/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/parsers.pyx
+      [40/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/writers.pyx
+      [41/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/window/indexers.pyx
+      [42/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/tslib.pyx
+      [43/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/lib.pyx
+      [44/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/window/aggregations.pyx
+      [45/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/interval.pyx
+      [46/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/sparse.pyx
+      [47/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/hashtable.pyx
+      [48/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/algos.pyx
+      [49/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/groupby.pyx
+      [50/151] Compiling Cython source /tmp/pip-install-j6gap65c/pandas_dfbeb96a4c1b43a18154b6b61d847f3f/pandas/_libs/join.pyx
+      ninja: build stopped: subcommand failed.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.2.0-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.2.0-py3-none-any.whl (243 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 243.4/243.4 kB 14.0 MB/s eta 0:00:00[2025-11-22 16:40:57.221989] 
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 122.5 MB/s eta 0:00:00[2025-11-22 16:40:57.235974] 
+Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 74.7 MB/s eta 0:00:00[2025-11-22 16:40:57.265582] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.19.2
+    Uninstalling Pygments-2.19.2:
+      Successfully uninstalled Pygments-2.19.2
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 4.0.0
+    Uninstalling markdown-it-py-4.0.0:
+      Successfully uninstalled markdown-it-py-4.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.2.0
+    Uninstalling rich-14.2.0:
+      Successfully uninstalled rich-14.2.0
+Successfully installed markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.19.2 rich-14.2.0
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[16:40:59] ❗️ installer returned a non-zero exit code
+[16:40:59] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.
